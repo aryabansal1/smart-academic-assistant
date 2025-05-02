@@ -4,9 +4,9 @@ Smart academic‑paper assistant in your browser. This extension streamlines aca
 
 ## Core Features
 
-1. Metadata extractor (Google Scholar + arXiv)
-2. LLM summarizer
-3. Citation generator (APA / BibTeX)
+1. Arya Bansal: Metadata extractor (Google Scholar + arXiv)
+2. Michael Ren: LLM summarizer
+3. Alexis Powell: Citation generator (APA / BibTeX)
 
 ## Known Bugs / Incomplete Features
 
