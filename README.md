@@ -1,12 +1,11 @@
 # Smart Academic Assistant
 
-Smart academic‑paper assistant in your browser. This extension streamlines academic reading by extracting structured metadata (title, authors, abstract), then offering GPT tools to summarize and reference — all without leaving the tab. It cuts the copy‑paste friction so students, researchers, and academics can increase their productivity.
+Smart academic‑paper assistant in your browser. This extension streamlines academic reading by extracting structured metadata (title, authors, abstract) and generating both APA and BibTeX formatted citations — all without leaving the tab. It cuts the copy‑paste friction so students, researchers, and academics can increase their productivity.
 
 ## Core Features
 
 1. Arya Bansal: Metadata extractor (from https://ieeexplore.ieee.org/Xplore/home.jsp)
-2. Michael Ren: LLM summarizer
-3. Alexis Powell: Citation generator (APA / BibTeX)
+2. Alexis Powell: Citation generator (APA / BibTeX)
 
 ## Known Bugs / Incomplete Features
 
