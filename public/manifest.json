@@ -10,7 +10,7 @@
       "128": "images/icon128.png"
     },
     "offline_enabled": true,
-    "permissions": ["storage", "activeTab", "contextMenus"],
+    "permissions": ["storage", "activeTab", "contextMenus", "clipboardWrite"],
     "background": {
       "service_worker": "background.js"
     },
