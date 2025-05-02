@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Academic Assistant Chrome Extension",
+    "version": "1.0",
+    "description": "Extracts metadata from academic paper pages like Google Scholar and arXiv, then presents AI-powered actions (summarize, cite, explain) in a clean popup",
+    "icons": {
+      "main": "images/icon.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "offline_enabled": true,
+    "permissions": ["storage", "activeTab", "contextMenus"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html"
+    }
+  }
+  
