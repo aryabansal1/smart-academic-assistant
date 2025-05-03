@@ -32,7 +32,7 @@ To install and run the Chrome extension locally:
 ## Team Responsibilities
 
 - **Arya Bansal:**
-  Focused on metadata extraction logic from IEEE article pages, displaying the title, authors, and abstract in the popup UI, and coding up the landing page.
+  Focused on metadata extraction logic from IEEE article pages. This extraction displays the title, authors, and abstract in the popup UI. Also implemented a clickable link feature to take you to author's bios. Finally, coding up the landing page.
 
 - **Alexis Powell:**
   Focused on citation generation logic (further extracting and formatting journal, volume, issue, pages, year, and DOI information from the page (it works for papers published in the 1900s too!)), fallback strategies for missing metadata, displaying citation features in the popup UI (APA, BibTeX), copy-to-clipboard functionality, and testing.
