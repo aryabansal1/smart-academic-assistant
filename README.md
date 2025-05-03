@@ -9,8 +9,6 @@ Smart academic‑paper assistant in your browser. This extension streamlines aca
 
 ## Known Bugs / Incomplete Features
 
-1. Conference articles have a different format
-
 ## Installation
 
 ## Chrome Extension Architecture
@@ -18,15 +16,5 @@ Smart academic‑paper assistant in your browser. This extension streamlines aca
 ## Testing
 
 To run the tests:
-
-```bash
-npm run test
-```
-
-To generate a coverage report:
-
-```bash
-npm run coverage
-```
 
 ## Credits

@@ -13,11 +13,13 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
       }
+
       h1 {
         font-size: 20px;
         margin-bottom: 16px;
-        color: #333;
+        color: #121e59;
       }
+
       .section {
         margin-bottom: 14px;
         padding: 10px;
@@ -25,16 +27,30 @@
         border-radius: 6px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       }
+
       .section h2 {
         font-size: 16px;
         margin: 0 0 6px 0;
         color: #1a73e8;
       }
+
+      .section h3 { 
+        font-size: 16px; 
+        margin: 10px 0 4px; 
+        color: #4ec26b; 
+        border-bottom: 1px solid #ddd; 
+        padding-bottom: 2px; 
+      }
+      pre { white-space: pre-wrap; font-family: monospace; margin: 4px 0; }
+      button { margin-right: 6px; margin-top: 4px; }
+      #copied { color: rgb(33,183,238); font-size: 12px; margin-top: 6px; }
+
       .section p, .section ul {
         margin: 0;
         font-size: 14px;
-        color: #555;
+        color: #070707;
       }
+
       .section ul {
         padding-left: 16px;
       }
@@ -52,26 +68,36 @@
   </head>
   <body>
     <h1>Research Paper Metadata</h1>
+
     <div class="section">
       <h2>Title</h2>
       <p id="title">Loading...</p>
     </div>
+
     <div class="section">
       <h2>Authors</h2>
       <ul id="authors">Loading...</ul>
     </div>
+
     <div class="section">
       <h2>Abstract</h2>
       <p id="abstract">Loading...</p>
     </div>
+
     <div class="section">
       <h2>Citations</h2>
-      <pre id="apa" style="white-space: pre-wrap; font-family: monospace;">Loading…</pre>
-      <pre id="bib" style="white-space: pre-wrap; font-family: monospace;">Loading…</pre>
+
+      <h3>APA</h3>
+      <pre id="apa">Loading...</pre>
       <button id="copyAPA">Copy&nbsp;APA</button>
+
+      <h3>BibTeX</h3>
+      <pre id="bib">Loading...</pre>
       <button id="copyBib">Copy&nbsp;BibTeX</button>
-      <p id="copied" style="color:rgb(33, 183, 238);font-size:12px;"></p>
+
+      <p id="copied"></p>
     </div>
+
     <script src="popup.js"></script>
   </body>
 </html>

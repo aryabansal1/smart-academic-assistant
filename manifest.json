@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Smart Academic Assistant",
     "version": "1.0",
-    "description": "Extracts metadata from academic papers and offers citations in a clean popup!",
+    "description": "Extracts metadata from academic papers and offers citations for copying in a clean popup!",
     "permissions": ["activeTab", "scripting", "clipboardWrite"],
     "action": {
       "default_popup": "popup.html",
