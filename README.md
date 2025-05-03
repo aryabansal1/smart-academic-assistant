@@ -4,10 +4,12 @@ Smart academic‑paper assistant in your browser. This extension streamlines aca
 
 ## Core Features
 
-1. Arya Bansal: Metadata extractor (from https://ieeexplore.ieee.org/Xplore/home.jsp)
+1. Arya Bansal: Metadata extractor (from <https://ieeexplore.ieee.org/Xplore/home.jsp>)
 2. Alexis Powell: Citation generator (APA / BibTeX)
 
 ## Known Bugs / Incomplete Features
+
+1. Conference articles have a different format
 
 ## Installation
 

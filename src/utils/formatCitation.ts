@@ -1,3 +1,4 @@
+/*
 export interface Meta {
     title: string;
     authors: string[];
@@ -9,7 +10,6 @@ export interface Meta {
     doi?: string;
   }
   
-  /* Helpers ---------------------------------------------------- */
   const initials = (name: string) =>
     name
       .split(/\s+/)
@@ -18,7 +18,7 @@ export interface Meta {
   
   const lastName = (name: string) => name.split(/\s+/).pop() || name;
   
-  /* APA 7 generator ------------------------------------------- */
+  // APA generator
   export function toAPA(m: Meta): string {
     const authors = m.authors
       .map(a => `${lastName(a)}, ${initials(a)}`)
@@ -29,7 +29,7 @@ export interface Meta {
     return `${authors} ${year} ${title}${journal}`;
   }
   
-  /* BibTeX generator ------------------------------------------ */
+  // BibTeX generator
   const slug = (str: string) =>
     str
       .toLowerCase()
@@ -49,4 +49,4 @@ export interface Meta {
     doi     = {${m.doi ?? ''}}
   }`;
   }  
-  
+*/

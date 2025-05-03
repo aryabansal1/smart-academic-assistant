@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Academic Assistant",
+    "version": "1.0",
+    "description": "Extracts metadata from academic papers and offers citations in a clean popup!",
+    "permissions": ["activeTab", "scripting", "clipboardWrite"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/16x16_logo.png",
+        "48": "images/48x48_logo.png",
+        "128": "images/128x128_logo.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://ieeexplore.ieee.org/abstract/document/*",
+          "*://ieeexplore.ieee.org/document/*",
+          "*://ieeexplore.ieee.org/*/document/*"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
