@@ -1,0 +1,12 @@
+{
+  "name": "smart-academic-assistant",
+    "version": "1.0",
+    "description": "Extracts metadata from academic papers and offers citations for copying in a clean popup!",
+  "main": "utils.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

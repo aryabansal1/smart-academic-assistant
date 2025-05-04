@@ -32,17 +32,30 @@ To install and run the Chrome extension locally:
 ## Team Responsibilities
 
 - **Arya Bansal:**
-  Focused on metadata extraction logic from IEEE article pages, displaying the title, authors, and abstract in the popup UI, and coding up the landing page.
+  Focused on metadata extraction logic from IEEE article pages. This extraction displays the title, authors, and abstract in the popup UI. Also implemented a clickable link feature to take you to author's bios. Finally, coded up the landing page.
 
 - **Alexis Powell:**
-  Focused on citation generation logic (further extracting and formatting journal, volume, issue, pages, year, and DOI information from the page (it works for papers published in the 1900s too!)), fallback strategies for missing metadata, displaying citation features in the popup UI (APA, BibTeX), copy-to-clipboard functionality, and testing.
+  Focused on citation generation logic (further extracting and formatting journal, volume, issue, pages, year, and DOI information from the site), fallback strategies for missing metadata, displaying citation features in the popup UI (APA, BibTeX), copy-to-clipboard functionality, and automated testing.
 
 ## Known Bugs / Incomplete Features
 
+- Bugs with generating citations for **Conference Papers** (as opposed to the standard **Journal, Magazine Articles**). This occurs when the Conference page's "Published in" and "Date" information are in a non-standard format.
 - Our extension is currently limited to IEEE Xplore and does not support other academic platforms such as arXiv or Google Scholar.
-- Some fields may appear as "Not found" if the article metadata is missing or non-standard.
+- Some fields may appear as "Not found" if the article metadata is missing.
 - **LLM-powered summarization** (e.g. abstract rephrasing or method explanation) was scoped for development but not implemented in this version.
 
-## Testing
+## Running Tests
 
-To run the tests:
+To run the automated citation and metadata tests:
+
+1. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+2. Run the test suite using:
+
+    ```bash
+    npm test
+    ```
