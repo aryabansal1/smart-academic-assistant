@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Research Paper Metadata Extractor",
+  "version": "1.0",
+  "description": "Extracts title, authors, and abstract from research paper pages.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://ieeexplore.ieee.org/abstract/document/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
